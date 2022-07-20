@@ -1,0 +1,12 @@
+@import '../../styles/styles.scss';
+
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    svg {
+        color: $secondary-color  !important;
+    }
+}
