@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import './Contact.scss'
+import './Contact.scss';
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')

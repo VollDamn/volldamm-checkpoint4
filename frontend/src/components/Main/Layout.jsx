@@ -1,19 +1,23 @@
-// import { Outlet } from "react-router-dom";
-// import React, { useContext } from "react";
-// import { Navigate } from "react-router-dom";
-// import { SpinnerCircular } from 'spinners-react'
-// import "./spinner.scss"
+import { Outlet } from 'react-router-dom'
+import Sidebar from '../Sidebar/Sidebar';
+import './Layout.scss';
 
-// const Layout = () => {
-//     const { loading, auth } = useContext(AuthContext);
+const Layout = () => {
+    return (
+        <div className="App">
+            <Sidebar />
+            <div className="page">
+                <span className="tags top-tags">&lt;body&gt;</span>
 
-//     return (
-//         <div className="layout">
-//             {(!loading) ? <div className="spinner"><SpinnerCircular size="30%" /></div> : (
-//                 auth ? <> <Outlet /></> : <Navigate to='/anmeldung' />)
-//             }
-//         </div > 
-//     )
-// }
+                <Outlet />
+                <span className="tags bottom-tags">
+                    &lt;/body&gt;
+                    <br />
+                    <span className="bottom-tag-html">&lt;/html&gt;</span>
+                </span>
+            </div>
+        </div>
+    )
+}
 
-// export default Layout;
+export default Layout

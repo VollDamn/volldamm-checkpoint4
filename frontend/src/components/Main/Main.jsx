@@ -4,11 +4,12 @@ import './Main.scss';
 import "../../styles/styles.scss";
 import Contact from '../Contact/Contact';
 import FrontPage from '../FrontPage/FrontPage';
+import Layout from './Layout';
 
 function Main() {
     return (
         <div className='main'>
-            <Contact />
+            <Layout />
         </div>
     )
 }
